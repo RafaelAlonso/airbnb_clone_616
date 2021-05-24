@@ -1,0 +1,9 @@
+<h1>Airbnb clone</h1>
+<h2>This is the list of our flats:</h2>
+
+<ul>
+  <% @flats.each do |flat| %>
+    <li> <%= link_to flat['name'], flat_path(id: flat['id']) %> </li>
+  <% end %>
+</ul>
+
